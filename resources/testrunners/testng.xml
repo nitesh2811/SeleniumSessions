@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Test Suite" verbose="5">
+
+<!-- We have two test blocks here. We can have any number of the test blocks.-->
+	<test name="Amazon Test">
+
+		<classes>
+			<class name="testngsessions.AmazonTest" />
+		</classes>
+
+	</test>
+
+	<test name="Demo Cart Test">
+		<classes>
+			<class name="testngsessions.DemoCartAppTest" />
+		</classes>
+
+	</test>
+
+</suite>
+
+<!-- Name can be anyting but it should be XML file 
+Template can be of various types for test runner.
+We have only one suite in testrunner files and mutiple test blocks
+testng.xml files will play important role in framework
+Verbose- Value can be from 1 to 10. It gives the level of logs
+recommended value is 4 or 5. 
+The default value of the verbose is 1. Its not recommended to give the verbose value.
+TestNG is best fit for selenium and POM.
+Every test block should have a unique name other we will have TestNG Exception
+-->
